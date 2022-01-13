@@ -73,3 +73,146 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.hero {
+  background: url("../img/decor/hero_bk.png") center center no-repeat;
+  background-color: #1968b1;
+  background-size: 100% 100%;
+  height: 100vh;
+  min-height: 650px;
+  color: #fff;
+}
+
+.hero__title-section {
+  width: 46%;
+}
+
+.hero__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  padding: 24px 0 65px;
+}
+
+.hero__main-title {
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 17px;
+  text-transform: uppercase;
+}
+
+.hero__title-desc {
+  font-size: 21px;
+  margin-bottom: 52px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 700;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__item {
+  margin-right: 22px;
+  text-align: right;
+}
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+.phone-number {
+  font-size: 22px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.phone-number__icon-elem {
+  width: 13px;
+  height: 13px;
+  margin-right: 6px;
+}
+
+.menu__link {
+  text-decoration: none;
+}
+.menu__link:hover {
+  color: #ffd517;
+}
+
+.features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.features__item {
+  margin-right: 30px;
+}
+.features__item:last-child {
+  margin-right: 0;
+}
+
+.feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feature__icon {
+  width: 41px;
+  margin-right: 14px;
+}
+
+.feature__text {
+  font-size: 16px;
+  font-weight: bold;
+  max-width: 90px;
+}
+
+.btn {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 21px 41px;
+  text-transform: uppercase;
+  border-radius: 100px;
+  line-height: 1;
+  text-decoration: none;
+  background: #fedb3f;
+  color: #000000;
+}
+.btn:hover {
+  background: #ffd517;
+}
