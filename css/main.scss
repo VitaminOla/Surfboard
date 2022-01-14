@@ -4,7 +4,8 @@ $baseFontSize: 18px;
 $yellow: #fedb3f;
 $yellow-hover: #ffd517;
 $grey: #f8faf9;
-$black: #303236;
+$black: #666666;
+$black-title: #292929;
 //normalize
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
 
@@ -18,3 +19,7 @@ $black: #303236;
 @import "blocks/features";
 @import "blocks/feature";
 @import "blocks/btn";
+@import "blocks/section";
+@import "blocks/headline";
+@import "blocks/benefits";
+@import "blocks/benefit";
