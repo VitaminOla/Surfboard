@@ -6,6 +6,10 @@ $yellow-hover: #ffd517;
 $grey: #f8faf9;
 $black: #666666;
 $black-title: #292929;
+
+//z-indexes
+$z-fixed-menu: 100;
+
 //normalize
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
 
@@ -29,3 +33,4 @@ $black-title: #292929;
 @import "blocks/form";
 @import "blocks/radio";
 @import "blocks/map";
+@import "blocks/fixed-menu";
