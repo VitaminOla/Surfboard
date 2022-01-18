@@ -14,6 +14,10 @@
 .form__row {
   display: flex;
   margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .form__block {
@@ -46,13 +50,18 @@
 .form__controls {
   display: flex;
   flex-wrap: wrap;
-
+  margin-bottom: 18px;
   .radio {
     margin-right: 20px;
-    margin-bottom: 18px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
 .form__btns {
-  margin-top: 26px;
+  margin-top: 40px;
 }
