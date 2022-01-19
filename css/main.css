@@ -81,6 +81,7 @@ img {
   height: 100vh;
   min-height: 650px;
   color: #fff;
+  fill: #fff;
 }
 
 .hero__title-section {
@@ -192,7 +193,8 @@ img {
 }
 
 .feature__icon {
-  width: 41px;
+  width: 34px;
+  height: 34px;
   margin-right: 14px;
 }
 
@@ -344,6 +346,7 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  fill: #000;
 }
 
 .reviews__display {
