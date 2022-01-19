@@ -1,0 +1,35 @@
+.footer__container {
+  min-height: 86px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contacts {
+  font-size: 21px;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+.socials__item {
+  margin-right: 14px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.socials__icon {
+  width: 20px;
+  height: 20px;
+  fill: #b3b3b3;
+
+  &:hover {
+    fill: #000;
+    transition: 0.5s;
+  }
+}
+.socials__link {
+  display: flex;
+}
