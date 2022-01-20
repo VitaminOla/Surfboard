@@ -11,7 +11,7 @@
 }
 
 .menu__item {
-  margin-right: 22px;
+  margin-right: rem(22px);
   text-align: right;
   &:last-child {
     margin-right: 0;
@@ -19,15 +19,15 @@
 }
 
 .phone-number {
-  font-size: 22px;
+  font-size: rem(22px);
   text-decoration: none;
   display: flex;
   align-items: center;
 }
 .phone-number__icon-elem {
-  width: 13px;
-  height: 13px;
-  margin-right: 6px;
+  width: rem(13px);
+  height: rem(13px);
+  margin-right: rem(6px);
 }
 .menu__link {
   text-decoration: none;
