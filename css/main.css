@@ -328,6 +328,11 @@ img {
   font-weight: 400;
   padding-left: 14px;
 }
+@media screen and (max-width: 768px) {
+  .btn--theme--transparent {
+    padding-left: 32px;
+  }
+}
 .btn--theme--transparent:hover {
   color: #fedb3f;
   background: transparent;
@@ -571,7 +576,7 @@ img {
 
 .order-section {
   background: url("../img/decor/order_bk.jpeg") center center no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 
 .order-section-wrapper {
@@ -595,6 +600,15 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 18%;
+  }
+}
 
 .form__col {
   -webkit-box-flex: 1;
@@ -605,6 +619,11 @@ img {
 .form__col:last-child {
   margin-right: 0;
 }
+@media screen and (max-width: 768px) {
+  .form__col {
+    margin-right: 0;
+  }
+}
 
 .form__row {
   display: -webkit-box;
@@ -614,6 +633,14 @@ img {
 }
 .form__row:last-child {
   margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .form__row {
+    margin-bottom: 12px;
+  }
+  .form__row:last-child {
+    margin-bottom: 12px;
+  }
 }
 
 .form__block {
@@ -632,10 +659,21 @@ img {
   border: solid 3px transparent;
   border-radius: 4px;
 }
+@media screen and (max-width: 768px) {
+  .form__input {
+    padding: 7px 10px;
+  }
+}
 .form__input--textarea {
   height: 152px;
   resize: none;
   margin-bottom: 18px;
+}
+@media screen and (max-width: 768px) {
+  .form__input--textarea {
+    height: 82px;
+    margin-bottom: 8px;
+  }
 }
 .form__input:focus {
   border-color: #fedb3f;
@@ -662,6 +700,17 @@ img {
 
 .form__btns {
   margin-top: 40px;
+}
+@media screen and (max-width: 768px) {
+  .form__btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 43px;
+  }
 }
 
 .radio {

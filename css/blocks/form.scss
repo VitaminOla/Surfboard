@@ -1,5 +1,10 @@
 .form {
   display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    padding: 0 18%;
+  }
 }
 
 .form__col {
@@ -7,6 +12,9 @@
   margin-right: 32px;
 
   &:last-child {
+    margin-right: 0;
+  }
+  @include tablets {
     margin-right: 0;
   }
 }
@@ -17,6 +25,13 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @include tablets {
+    margin-bottom: 12px;
+    &:last-child {
+      margin-bottom: 12px;
+    }
   }
 }
 
@@ -34,11 +49,18 @@
   padding: 14px 12px;
   border: solid 3px transparent;
   border-radius: 4px;
+  @include tablets {
+    padding: 7px 10px;
+  }
 
   &--textarea {
     height: 152px;
     resize: none;
     margin-bottom: 18px;
+    @include tablets {
+      height: 82px;
+      margin-bottom: 8px;
+    }
   }
 
   &:focus {
@@ -64,4 +86,9 @@
 
 .form__btns {
   margin-top: 40px;
+  @include tablets {
+    display: flex;
+    justify-content: center;
+    margin-left: 43px;
+  }
 }
