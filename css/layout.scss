@@ -1,5 +1,13 @@
 html {
   font-size: $baseFontSize;
+
+  @include tablets {
+    font-size: $baseFontSize - 1px;
+  }
+
+  @include phones {
+    font-size: $baseFontSize - 2px;
+  }
 }
 
 html,
@@ -27,6 +35,10 @@ body {
   width: 95%;
   max-width: $containerWidth;
   margin: 0 auto;
+
+  @include tablets {
+    width: 100%;
+  }
 }
 
 //tag styles reset

@@ -26,6 +26,8 @@ $z-fixed-menu: 100;
 //blocks
 @import "blocks/hero";
 @import "blocks/header";
+@import "blocks/menu";
+@import "blocks/phone-number";
 @import "blocks/features";
 @import "blocks/feature";
 @import "blocks/btn";
@@ -41,3 +43,4 @@ $z-fixed-menu: 100;
 @import "blocks/map";
 @import "blocks/fixed-menu";
 @import "blocks/footer";
+@import "blocks/hamburger";
