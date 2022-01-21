@@ -35,10 +35,6 @@ body {
   width: 95%;
   max-width: $containerWidth;
   margin: 0 auto;
-
-  @include tablets {
-    width: 100%;
-  }
 }
 
 //tag styles reset

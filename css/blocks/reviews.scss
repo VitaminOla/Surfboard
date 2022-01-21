@@ -2,15 +2,29 @@
   background: $grey;
   padding: 42px 142px 42px 42px;
   margin-bottom: 8px;
+
+  @include tablets {
+    padding: 56px 24px 46px 24px;
+    margin-bottom: 32px;
+  }
 }
 
 .reviews__display-inner {
   display: flex;
+  @include tablets {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 }
 
 .reviews__avatar {
   width: 253px;
   height: 264px;
+  @include tablets {
+    width: 130px;
+    height: 130px;
+  }
 }
 
 .reviews__avatar-img {
