@@ -47,8 +47,17 @@
   font-weight: 700;
   margin-bottom: rem(17px);
   text-transform: uppercase;
+
   @include tablets {
     padding: 0 5%;
+  }
+  @include phones {
+    padding: 0 3%;
+    font-size: rem(40px);
+    line-height: 90%;
+  }
+  @include mobileSM {
+    font-size: rem(34px);
   }
 }
 

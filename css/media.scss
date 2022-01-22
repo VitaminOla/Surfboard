@@ -13,3 +13,9 @@
     @content;
   }
 }
+
+@mixin mobileSM {
+  @media screen and (max-width: $mobileSM) {
+    @content;
+  }
+}
