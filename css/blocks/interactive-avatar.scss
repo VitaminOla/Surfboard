@@ -7,6 +7,17 @@
   overflow: hidden;
   position: relative;
 
+  @include tablets {
+    width: 76px;
+    height: 76px;
+    border: 4px solid transparent;
+  }
+
+  @include phones {
+    width: 68px;
+    height: 68px;
+  }
+
   &--active {
     border-color: $yellow;
   }

@@ -36,6 +36,10 @@
 .reviews__content {
   flex: 1;
   margin-left: 40px;
+
+  @include tablets {
+    margin-left: 0;
+  }
 }
 
 .reviews__title {

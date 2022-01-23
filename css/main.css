@@ -606,6 +606,11 @@ img {
           flex: 1;
   margin-left: 40px;
 }
+@media screen and (max-width: 768px) {
+  .reviews__content {
+    margin-left: 0;
+  }
+}
 
 .reviews__title {
   font-size: 27px;
@@ -645,6 +650,19 @@ img {
   border-radius: 50%;
   overflow: hidden;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .interactive-avatar {
+    width: 76px;
+    height: 76px;
+    border: 4px solid transparent;
+  }
+}
+@media screen and (max-width: 480px) {
+  .interactive-avatar {
+    width: 68px;
+    height: 68px;
+  }
 }
 .interactive-avatar--active {
   border-color: #fedb3f;
