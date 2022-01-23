@@ -1,11 +1,26 @@
 .benefits {
   display: flex;
+
+  @include phones {
+    flex-direction: column;
+    font-size: 18px;
+  }
+  @include mobileSM {
+    font-size: 16px;
+  }
 }
 
 .benefits__item {
   flex: 1;
   padding: 0 2%;
   position: relative;
+
+  @include phones {
+    padding: 0;
+    @include phones {
+      margin-bottom: rem(31px);
+    }
+  }
 
   &:before {
     content: url("../img/decor/separator.png");

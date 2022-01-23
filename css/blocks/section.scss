@@ -12,6 +12,9 @@
       color: inherit;
     }
   }
+  @include phones {
+    min-height: 700px;
+  }
 }
 
 .section__title {
@@ -20,4 +23,9 @@
   text-transform: uppercase;
   text-align: center;
   color: $black-title;
+
+  @include phones {
+    font-size: 40px;
+    line-height: 1.1;
+  }
 }
