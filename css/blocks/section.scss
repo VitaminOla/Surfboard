@@ -18,14 +18,14 @@
 }
 
 .section__title {
-  font-size: 48px;
+  font-size: rem(48px);
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
   color: $black-title;
 
   @include phones {
-    font-size: 40px;
+    font-size: rem(40px);
     line-height: 1.1;
   }
 }

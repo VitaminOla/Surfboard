@@ -1,6 +1,6 @@
 .interactive-avatar {
-  width: 80px;
-  height: 80px;
+  width: rem(80px);
+  height: rem(80px);
 
   border: 6px solid transparent;
   border-radius: 50%;
@@ -8,14 +8,14 @@
   position: relative;
 
   @include tablets {
-    width: 76px;
-    height: 76px;
+    width: rem(76px);
+    height: rem(76px);
     border: 4px solid transparent;
   }
 
   @include phones {
-    width: 68px;
-    height: 68px;
+    width: rem(68px);
+    height: rem(68px);
   }
 
   &--active {
