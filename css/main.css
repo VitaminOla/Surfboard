@@ -720,6 +720,11 @@ img {
     padding: 0 18%;
   }
 }
+@media screen and (max-width: 480px) {
+  .form {
+    padding: 0;
+  }
+}
 
 .form__col {
   -webkit-box-flex: 1;
@@ -798,9 +803,22 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 18px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .form__controls {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .form__controls .radio {
   margin-right: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .form__controls .radio:last-child {
   margin-right: 0;
@@ -855,6 +873,11 @@ img {
   border-radius: 50%;
   background: #fff;
   margin-right: 10px;
+}
+@media screen and (max-width: 375px) {
+  .radio__visible {
+    margin-right: 7px;
+  }
 }
 .radio__visible:before {
   content: "";

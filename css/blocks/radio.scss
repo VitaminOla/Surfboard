@@ -29,6 +29,9 @@
   background: #fff;
   margin-right: 10px;
 
+  @include mobileSM {
+    margin-right: 7px;
+  }
   &:before {
     content: "";
     width: 13px;

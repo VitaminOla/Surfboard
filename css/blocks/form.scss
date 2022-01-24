@@ -5,6 +5,9 @@
     flex-direction: column;
     padding: 0 18%;
   }
+  @include phones {
+    padding: 0;
+  }
 }
 
 .form__col {
@@ -73,8 +76,15 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 18px;
+  align-items: center;
+  @include phones {
+    justify-content: center;
+  }
+
   .radio {
     margin-right: 20px;
+    align-items: center;
+
     &:last-child {
       margin-right: 0;
     }
