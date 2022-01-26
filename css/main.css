@@ -1036,6 +1036,17 @@ img {
   }
 }
 
+.hamburger-wrapper {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 3%;
+  right: 3%;
+  z-index: 100;
+  background-color: #1968b1;
+  border-radius: 6px;
+}
+
 .hamburger {
   width: 1.3888888889rem;
   height: 1.3333333333rem;
@@ -1053,6 +1064,11 @@ img {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    position: relative;
+    top: 25%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 
