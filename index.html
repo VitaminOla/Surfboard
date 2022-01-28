@@ -18,7 +18,7 @@
               <nav class="menu">
                 <ul class="menu__list">
                   <li class="menu__item">
-                    <a href="#" class="menu__link">О нас</a>
+                    <a href="#about" class="menu__link">О нас</a>
                   </li>
                   <li class="menu__item">
                     <a href="#" class="menu__link">Серфборды</a>
@@ -30,13 +30,13 @@
                     <a href="#" class="menu__link">Меню</a>
                   </li>
                   <li class="menu__item">
-                    <a href="#" class="menu__link">Отзывы</a>
+                    <a href="#Reviews" class="menu__link">Отзывы</a>
                   </li>
                   <li class="menu__item">
                     <a href="#" class="menu__link">Как мы работаем</a>
                   </li>
                   <li class="menu__item">
-                    <a href="#" class="menu__link">Контакты</a>
+                    <a href="#Contacts" class="menu__link">Контакты</a>
                   </li>
                 </ul>
               </nav>
@@ -90,7 +90,7 @@
             </div>
           </div>
         </section>
-        <section class="section benefits-section">
+        <section id="about" class="section benefits-section">
           <div class="container">
             <div class="headline">
               <h2 class="section__title headline__title">почему Surfboard?</h2>
@@ -157,7 +157,7 @@
             </ul>
           </div>
         </section>
-        <section class="section reviews-section">
+        <section id="Reviews" class="section reviews-section">
           <div class="container">
             <h2 class="section__title">Отзывы</h2>
             <div class="reviews">
@@ -311,7 +311,7 @@
           <footer class="footer">
             <div class="container footer__container">
               <div class="contacts">
-                <div class="contacts__address">
+                <div id="Contacts" class="contacts__address">
                   Москва, ул.Новый Арбат, д.31/12
                 </div>
                 <a
@@ -399,5 +399,38 @@
         <span class="hamburger__plank"></span>
       </a>
     </div>
+    <div class="fullscreen-menu">
+      <a href="#" class="fullscreen-menu__close">
+        <svg class="fullscreen-menu__close-icon">
+          <use xlink:href="./img/icons/sprite.svg#close"></use>
+        </svg>
+      </a>
+      <nav class="menu menu--vertical">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#about" class="menu__link">О нас</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Серфборды</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Команда</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Меню</a>
+          </li>
+          <li class="menu__item">
+            <a href="#Reviews" class="menu__link">Отзывы</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Как мы работаем</a>
+          </li>
+          <li class="menu__item">
+            <a href="#Contacts" class="menu__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <script src="./scripts/menu.js"></script>
   </body>
 </html>
