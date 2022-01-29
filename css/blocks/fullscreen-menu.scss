@@ -1,19 +1,24 @@
 .fullscreen-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  flex-direction: column;
-  background: #2e3336;
-  z-index: 1000;
-  overflow: hidden;
+  background: #333537;
+  display: flex;
   align-items: center;
   justify-content: center;
-  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 100%;
+  transition: all 0.4s;
+  // right: 0;
+  // bottom: 0;
+  // overflow: hidden;
+  // display: none;
 
-  &.active {
-    display: flex;
+  &--active {
+    left: 0;
+    opacity: 1;
+    // display: flex;
   }
 }
 
@@ -32,4 +37,8 @@
   &:hover {
     fill: $yellow-hover;
   }
+}
+
+.body--active-menu {
+  overflow: hidden;
 }
