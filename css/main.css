@@ -1236,6 +1236,64 @@ img {
   opacity: 1;
 }
 
+.parameters__dropdown {
+  color: #000000;
+  position: absolute;
+  top: 0;
+  width: 273px;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+          box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  border-radius: 4px;
+  padding: 26px 25px 26px 30px;
+  left: -5000px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.parameters__dropdown:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 50%;
+  width: 30px;
+  left: -29px;
+}
+
+.parameters__table {
+  width: 100%;
+}
+
+.parameters__icon {
+  width: 32px;
+  height: 32px;
+}
+
+.parameters__table-row {
+  border-bottom: 15px solid transparent;
+}
+.parameters__table-row:last-child {
+  border-bottom: 0;
+}
+
+.parameters__table-cell {
+  vertical-align: middle;
+  text-align: right;
+  font-weight: 400;
+}
+
+.parameters__text-container {
+  padding-left: 10px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.parameters__text {
+  font-size: 16px;
+}
+
 .products__item {
   padding: 0 30px;
 }
