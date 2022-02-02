@@ -1159,6 +1159,12 @@ img {
 .products-slider {
   position: relative;
 }
+.products-slider .bx-wrapper {
+  border: 0;
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 
 .product-slider__arrow {
   background: url("../img/icons/right.svg") center center no-repeat;

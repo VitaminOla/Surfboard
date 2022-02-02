@@ -1,5 +1,11 @@
 .products-slider {
   position: relative;
+
+  .bx-wrapper {
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
 }
 
 .product-slider__arrow {
