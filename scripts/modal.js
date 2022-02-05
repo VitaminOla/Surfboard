@@ -41,6 +41,9 @@ $('.form').submit(e => {
 
     request.done(data => {
       content.text(data.message);
+      name.val("");
+      phone.val("");
+      comment.val("");
     });
 
     request.fail(data => {
@@ -54,6 +57,7 @@ $('.form').submit(e => {
         src: "#modal",
        type: "inline"
       })
+      
     })
   }
   
