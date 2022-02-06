@@ -41,9 +41,8 @@ $('.form').submit(e => {
 
     request.done(data => {
       content.text(data.message);
-      name.val("");
-      phone.val("");
-      comment.val("");
+      $('#clear-btn').click();
+      
     });
 
     request.fail(data => {
