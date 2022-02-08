@@ -11,6 +11,13 @@
     background-color: #1968b1;
     border-radius: 6px;
   }
+  @include phones {
+    width: 30px;
+    height: 30px;
+    top: 1%;
+    right: 2%;
+    border-radius: 3px;
+  }
 }
 .hamburger {
   width: rem(25px);
@@ -26,6 +33,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  @include phones {
+    top: 10%;
+    left: 50%;
+  }
 }
 
 .hamburger__plank {
@@ -33,4 +44,9 @@
   background: #fff;
   height: rem(4px);
   border-radius: rem(10px);
+
+  @include phones {
+    height: 3px;
+    border-radius: 4px;
+  }
 }

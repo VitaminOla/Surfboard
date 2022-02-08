@@ -25,6 +25,10 @@
     width: 90px;
   }
 
+  @include mobileSM {
+    width: 60px;
+  }
+
   &:after {
     content: "";
     display: block;
@@ -52,6 +56,10 @@
   @include phones {
     font-size: 40px;
   }
+
+  @include mobileSM {
+    font-size: 24px;
+  }
 }
 
 .products-menu__content {
@@ -74,7 +82,11 @@
   }
 
   @include phones {
-    padding: 29px 35px 35px 38px;
+    padding: 40px 35px 35px 30px;
+  }
+
+  @include mobileSM {
+    padding: 40px 15px 20px 20px;
   }
 }
 
@@ -84,6 +96,10 @@
   right: 25px;
   border: none;
   background: transparent;
+
+  @include tablets {
+    display: none;
+  }
 }
 .products-menu__close-icon {
   width: 18px;

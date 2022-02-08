@@ -31,4 +31,9 @@
     top: 75px;
     left: 10px;
   }
+
+  @include mobileSM {
+    // transform: rotate(-90deg) translateY(-50%);
+    // transform-origin: 30% 50%;
+  }
 }
