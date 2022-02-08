@@ -1,4 +1,4 @@
-const openItem = item => {
+const openItemTeam = item => {
 const container = item.closest(".team__item");//ищет родителя
 const contentBlock = container.find(".team__content")//ищет потомков
 const textBlock = contentBlock.find(".team__content-block");
@@ -25,8 +25,6 @@ $('.team__title').click(e => {
     closeEveryItem(container);
   } else {
     closeEveryItem(container);
-    openItem($this);
+    openItemTeam($this);
   }
-  
-
-})
+  })
