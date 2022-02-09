@@ -22,32 +22,49 @@
   <body>
     <div class="wrapper">
       <div class="maincontent">
-        <section class="hero">
+        <section data-section-id="hero" class="hero">
           <div class="container hero__container">
             <header class="header">
               <img src="./img/logo.png" alt="SURFBOARD logo" class="logo" />
               <nav class="menu">
                 <ul class="menu__list">
                   <li class="menu__item">
-                    <a href="#about" class="menu__link">О нас</a>
+                    <a href="#" data-scroll-to="benefits" class="menu__link"
+                      >О нас</a
+                    >
                   </li>
                   <li class="menu__item">
-                    <a href="#products" class="menu__link">Серфборды</a>
+                    <a href="#" data-scroll-to="products" class="menu__link"
+                      >Серфборды</a
+                    >
                   </li>
                   <li class="menu__item">
-                    <a href="#team" class="menu__link">Команда</a>
+                    <a href="#" data-scroll-to="team" class="menu__link"
+                      >Команда</a
+                    >
                   </li>
                   <li class="menu__item">
-                    <a href="#product-menu" class="menu__link">Меню</a>
+                    <a
+                      href="#"
+                      data-scroll-to="products-menu"
+                      class="menu__link"
+                      >Меню</a
+                    >
                   </li>
                   <li class="menu__item">
-                    <a href="#Reviews" class="menu__link">Отзывы</a>
+                    <a href="#" data-scroll-to="reviews" class="menu__link"
+                      >Отзывы</a
+                    >
                   </li>
                   <li class="menu__item">
-                    <a href="#" class="menu__link">Как мы работаем</a>
+                    <a href="#" data-scroll-to="player" class="menu__link"
+                      >Как мы работаем</a
+                    >
                   </li>
                   <li class="menu__item">
-                    <a href="#Contacts" class="menu__link">Контакты</a>
+                    <a href="#" data-scroll-to="contacts" class="menu__link"
+                      >Контакты</a
+                    >
                   </li>
                 </ul>
               </nav>
@@ -70,7 +87,7 @@
               <div class="hero__title-desc">
                 Самый большой выбор серфбордов в мире
               </div>
-              <a href="#Order" class="btn">Заказать</a>
+              <a href="#" data-scroll-to="order" class="btn">Заказать</a>
             </div>
             <div class="hero__icon-section">
               <ul class="features">
@@ -96,7 +113,7 @@
             </div>
           </div>
         </section>
-        <section id="about" class="section benefits-section">
+        <section data-section-id="benefits" class="section benefits-section">
           <div class="container">
             <div class="headline">
               <h2 class="section__title headline__title">почему Surfboard?</h2>
@@ -163,7 +180,7 @@
             </ul>
           </div>
         </section>
-        <section id="products" class="section products-section">
+        <section data-section-id="products" class="section products-section">
           <div class="container">
             <div class="products-slider">
               <div class="product-slider__arrows">
@@ -964,7 +981,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="product__title">Лонгборд 2.0</div>
+                      <div class="product__title">Лонгборд 4.0</div>
                       <div class="product__text">
                         <p>
                           Устойчивая доска для новичков. На них легко лежать,
@@ -1171,7 +1188,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="product__title">Лонгборд 2.0</div>
+                      <div class="product__title">Лонгборд 5.0</div>
                       <div class="product__text">
                         <p>
                           Устойчивая доска для новичков. На них легко лежать,
@@ -1222,7 +1239,7 @@
             </div>
           </div>
         </section>
-        <section id="team" class="section team-section">
+        <section data-section-id="team" class="section team-section">
           <div class="container">
             <h2 class="section__title">Команда</h2>
             <ul class="team team--version--desctop">
@@ -1392,7 +1409,10 @@
             </ul>
           </div>
         </section>
-        <section id="product-menu" class="section products-menu-section">
+        <section
+          data-section-id="products-menu"
+          class="section products-menu-section"
+        >
           <h1 class="section__title products-menu-section__title">Меню</h1>
           <ul class="products-menu">
             <li class="products-menu__item">
@@ -1462,7 +1482,7 @@
             </li>
           </ul>
         </section>
-        <section id="Reviews" class="section reviews-section">
+        <section data-section-id="reviews" class="section reviews-section">
           <div class="container">
             <h2 class="section__title">Отзывы</h2>
             <div class="reviews__display">
@@ -1576,7 +1596,7 @@
           </div>
         </section>
         <section
-          id="Order"
+          data-section-id="order"
           class="section order-section section--font-color--white"
         >
           <div class="order-section-wrapper">
@@ -1665,12 +1685,12 @@
             </div>
           </div>
         </section>
-        <section class="section map-section">
+        <section data-section-id="contacts" class="section map-section">
           <div class="map-container"></div>
           <footer class="footer">
             <div class="container footer__container">
               <div class="contacts">
-                <div id="Contacts" class="contacts__address">
+                <div class="contacts__address">
                   Москва, ул.Новый Арбат, д.31/12
                 </div>
                 <a
@@ -1723,31 +1743,35 @@
     <nav class="fixed-menu">
       <ul class="fixed-menu__list">
         <li class="fixed-menu__item fixed-menu__item--active">
-          <a href="" class="fixed-menu__link"></a>
+          <a href="" data-scroll-to="hero" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="" class="fixed-menu__link"></a>
+          <a href="" data-scroll-to="benefits" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="" class="fixed-menu__link"></a>
+          <a href="" data-scroll-to="products" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="" class="fixed-menu__link"></a>
+          <a href="" data-scroll-to="team" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="" class="fixed-menu__link"></a>
+          <a
+            href=""
+            data-scroll-to="products-menu"
+            class="fixed-menu__link"
+          ></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="" class="fixed-menu__link"></a>
+          <a href="" data-scroll-to="reviews" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="" class="fixed-menu__link"></a>
+          <a href="" data-scroll-to="player" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="" class="fixed-menu__link"></a>
+          <a href="" data-scroll-to="order" class="fixed-menu__link"></a>
         </li>
         <li class="fixed-menu__item">
-          <a href="" class="fixed-menu__link"></a>
+          <a href="" data-scroll-to="contacts" class="fixed-menu__link"></a>
         </li>
       </ul>
     </nav>
@@ -1816,5 +1840,6 @@
     <script src="./scripts/team_acco.js"></script>
     <script src="./scripts/reviews.js"></script>
     <script src="./scripts/modal.js"></script>
+    <script src="./scripts/ops.js"></script>
   </body>
 </html>
