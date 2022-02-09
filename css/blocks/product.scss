@@ -66,11 +66,17 @@
   @include tablets {
     width: 307px;
     height: 293px;
+    transform: translate(-50%, -50%) scale(0.9);
   }
 
   @include phones {
-    width: 243px;
-    height: 232px;
+    // width: 162px;
+    // height: 154px;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+
+  @include mobileSM {
+    transform: translate(-50%, -50%) scale(0.7);
   }
 }
 .product__image-elem {
@@ -80,13 +86,21 @@
   transform: rotate(30deg);
 
   @include tablets {
-    width: 116px;
-    height: 414px;
+    // width: 116px;
+    // height: 414px;
+    transform: rotate(30deg) scale(0.6);
   }
 
   @include phones {
-    width: 92px;
-    height: 329px;
+    // width: 92px;
+    // height: 329px;
+    transform: rotate(30deg) scale(0.6);
+  }
+
+  @include mobileSM {
+    // width: 64px;
+    // height: 228px;
+    transform: rotate(30deg) scale(0.5);
   }
 }
 
@@ -103,6 +117,8 @@
     font-size: 30px;
     letter-spacing: -0.1px;
     margin-right: 0;
+    margin-top: -130px;
+    margin-bottom: 14px;
   }
 
   @include phones {
@@ -115,6 +131,12 @@
   line-height: 1.2;
   @include tablets {
     font-size: 18px;
+  }
+  @include phones {
+    font-size: 16px;
+  }
+  @include mobileSM {
+    font-size: 14px;
   }
 }
 
@@ -170,6 +192,6 @@
   }
 
   @include mobileSM {
-    font-size: 40px;
+    font-size: 36px;
   }
 }
