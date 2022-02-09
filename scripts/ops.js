@@ -1,74 +1,97 @@
 const sections = $("section");
 const display = $(".maincontent");
+const sideMenu = $(".fixed-menu");
+const menuItems = sideMenu.find(".fixed-menu__item");
 
 let inScroll = false;
 
 sections.first().addClass("active");
 
+const countSectionPosition = sectionEq => {
+  const position = sectionEq * -100;
+  if (isNaN(position)) {
+    console.error("передано не верное значение в countSectionPosition");
+    return 0;
+  }
+  return position;
+};
+
+const resetActiveClassForItem = (items, itemEq, activeClass) => {
+  items.eq(itemEq).addClass(activeClass).siblings().removeClass(activeClass);
+};
+
 const performTransition = sectionEq => {
 
-  if (inScroll === false) {
-    inScroll = true;
-    const position = sectionEq * -100;
-
-    const sideMenu = $(".fixed-menu");
-
-    display.css({
-      transform: `translateY(${position}%)`
-    });
-    sections.eq(sectionEq).addClass("active").siblings().removeClass("active");
-    //метод . eq() позволяет выбрать элемент с конкретным индексом из набора выбранных элементов.  
-
-    setTimeout(() => {
-      inScroll = false;
-
-      sideMenu.find(".fixed-menu__item").eq(sectionEq).addClass("fixed-menu__item--active").siblings().removeClass("fixed-menu__item--active");
-    }, 1300);
-  }
+  if (inScroll) return;
   
-}
+  const transitionOver = 1000;
+  const mouseInertiaOver = 300;
 
-const scrollViewport = direction => {
+  inScroll = true;
+  
+  const position = countSectionPosition(sectionEq);
+
+  display.css({
+    transform: `translateY(${position}%)`
+  });
+    
+  resetActiveClassForItem(sections, sectionEq, "active")
+    
+  setTimeout(() => {
+    inScroll = false;
+    resetActiveClassForItem(menuItems, sectionEq, "fixed-menu__item--active");
+  }, transitionOver + mouseInertiaOver);
+    
+};
+
+const viewportScroller = () => {
   const activeSection = sections.filter(".active");
   const nextSection = activeSection.next();
   const prevSection = activeSection.prev();
 
-  if (direction === "next" && nextSection.length) {
-    performTransition(nextSection.index());
-  }
-  if (direction === "prev" && prevSection.length) {
-    performTransition(prevSection.index());
-  }
-}
+  return {
+    next() {
+      if (nextSection.length) {
+      performTransition(nextSection.index());
+      }
+    },
+    prev() {
+      if (prevSection.length) {
+        performTransition(prevSection.index());
+      }
+    },
+  };
+};
 
 $(window).on("wheel", e => {
   const deltaY = e.originalEvent.deltaY;
+  const scroller = viewportScroller();
 
   if (deltaY > 0) {
     //next
-    scrollViewport("next");
+    scroller.next();
   }
 
   if (deltaY < 0) {
     //prev
-    scrollViewport("prev");
+    scroller.prev();
   }
 });
 
 $(window).on("keydown", e => {
   const tagName = e.target.tagName.toLowerCase();
+  const userTypingInputs = tagName === "input" || tagName === "textarea";
+  const scroller = viewportScroller();
 
-  if (tagName != "input" && tagName != "textarea") {
-    switch (e.keyCode) {
-      case 38:
-        scrollViewport("prev");
-        break;
-      case 40:
-        scrollViewport("next");
-        break;
-    }
+  if (userTypingInputs) return; 
+  switch (e.keyCode) {
+    case 38:
+      scroller.prev();
+      break;
+    case 40:
+      scroller.next();
+      break;
   }
-  
 });
 
 $("[data-scroll-to]").click(e => {
@@ -79,4 +102,4 @@ $("[data-scroll-to]").click(e => {
   const reqSection = $(`[data-section-id=${target}]`);
 
   performTransition(reqSection.index());
-})
+});
