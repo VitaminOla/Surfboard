@@ -403,7 +403,7 @@ img {
 }
 @media screen and (max-width: 375px) {
   .section {
-    min-height: 633px;
+    min-height: 625px;
   }
 }
 
