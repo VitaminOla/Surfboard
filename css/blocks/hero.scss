@@ -12,6 +12,9 @@
   @include tablets {
     background-image: none;
   }
+  @include mobileSM {
+    min-height: 625px;
+  }
 }
 
 .hero__container {

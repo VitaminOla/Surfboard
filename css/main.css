@@ -111,6 +111,11 @@ img {
     background-image: none;
   }
 }
+@media screen and (max-width: 375px) {
+  .hero {
+    min-height: 625px;
+  }
+}
 
 .hero__container {
   display: -webkit-box;
@@ -800,6 +805,11 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media screen and (max-width: 375px) {
+  .order-section-wrapper {
+    min-height: 625px;
+  }
 }
 
 .form {

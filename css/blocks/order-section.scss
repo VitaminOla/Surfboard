@@ -10,4 +10,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @include mobileSM {
+    min-height: 625px;
+  }
 }
