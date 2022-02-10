@@ -114,10 +114,10 @@ if (isMobile) {
   swipe: function (event, direction) {
     const scroller = viewportScroller();
     let scrollDirection = "";
-
+    
     if (direction === "up") scrollDirection = "next";
     if (direction === "down") scrollDirection = "prev";
-
+    if (direction === "right" || direction === "left") return;
     scroller[scrollDirection]();
   }
 })
