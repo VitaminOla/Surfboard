@@ -401,6 +401,11 @@ img {
 .section--font-color--white .section__title {
   color: inherit;
 }
+@media screen and (max-width: 375px) {
+  .section {
+    min-height: 633px;
+  }
+}
 
 .section__title {
   font-size: 2.6666666667rem;
@@ -1457,11 +1462,16 @@ img {
 }
 @media screen and (max-width: 480px) {
   .product__col {
-    width: 82%;
+    width: 87%;
   }
 }
 .product__col:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 375px) {
+  .product__col {
+    width: 90%;
+  }
 }
 
 .product__image {
@@ -1614,9 +1624,20 @@ img {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .product__values-title {
+    margin-bottom: -6px;
+  }
+}
+
 .product__values-amount {
   font-weight: bold;
   color: #333333;
+}
+@media screen and (max-width: 375px) {
+  .product__values-amount {
+    margin-bottom: 6px;
+  }
 }
 
 .product__values-rub {

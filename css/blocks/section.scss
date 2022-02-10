@@ -13,9 +13,9 @@
       color: inherit;
     }
   }
-  // @include phones {
-  //   min-height: 700px;
-  // }
+  @include mobileSM {
+    min-height: 633px;
+  }
 }
 
 .section__title {

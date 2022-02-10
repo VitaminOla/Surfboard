@@ -41,10 +41,14 @@
   }
 
   @include phones {
-    width: 82%;
+    width: 87%;
   }
   &:last-child {
     margin-right: 0;
+  }
+
+  @include mobileSM {
+    width: 90%;
   }
 }
 
@@ -176,9 +180,18 @@
   }
 }
 
+.product__values-title {
+  @include tablets {
+    margin-bottom: -6px;
+  }
+}
+
 .product__values-amount {
   font-weight: bold;
   color: #333333;
+  @include mobileSM {
+    margin-bottom: 6px;
+  }
 }
 
 .product__values-rub {
