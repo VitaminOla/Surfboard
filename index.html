@@ -1595,10 +1595,59 @@
             </ul>
           </div>
         </section>
-        <section
-          data-section-id="player"
-          class="section player-section"
-        ></section>
+        <section data-section-id="player" class="section player-section">
+          <div class="container">
+            <h2 class="section__title">Как мы работаем</h2>
+            <div class="player">
+              <div class="player__wrapper">
+                <button
+                  class="video-button player__playCenter"
+                  onclick="play();"
+                ></button>
+                <video
+                  id="videoId"
+                  class="player__video"
+                  poster="./img/bg/playerSplash.jpeg"
+                  src="./img/video.mp4"
+                  onclick="handleClick()"
+                ></video>
+              </div>
+
+              <div class="player__controls">
+                <button
+                  class="video-button player__play"
+                  onclick="play();"
+                ></button>
+                <button
+                  class="video-button player__pause"
+                  onclick="pause();"
+                ></button>
+                <input
+                  class="player__play-range"
+                  type="range"
+                  value="0"
+                  name="play-range-control"
+                  onchange="changePlayRange();"
+                />
+                <button
+                  class="video-button player__sound-on"
+                  onclick="soundOff();"
+                ></button>
+                <button
+                  class="video-button player__sound-off"
+                  onclick="soundOn();"
+                ></button>
+                <input
+                  class="player__sound-range"
+                  type="range"
+                  value="40"
+                  name="sound-range-control"
+                  onchange="changeVolume();"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
         <section
           data-section-id="order"
           class="section order-section section--font-color--white"
@@ -1859,6 +1908,7 @@
     <script src="./scripts/team_acco.js"></script>
     <script src="./scripts/reviews.js"></script>
     <script src="./scripts/modal.js"></script>
+    <script src="./scripts/player.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"
       integrity="sha512-YYiD5ZhmJ0GCdJvx6Xe6HzHqHvMpJEPomXwPbsgcpMFPW+mQEeVBU6l9n+2Y+naq+CLbujk91vHyN18q6/RSYw=="
