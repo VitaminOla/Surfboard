@@ -1297,7 +1297,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .product-slider__arrow {
-    top: 25%;
+    top: 35%;
   }
 }
 
@@ -1554,6 +1554,11 @@ img {
     padding: 0;
   }
 }
+@media screen and (max-width: 375px) {
+  .product__title {
+    margin-top: -150px;
+  }
+}
 
 .product__text {
   margin-bottom: 23px;
@@ -1561,12 +1566,14 @@ img {
 }
 @media screen and (max-width: 768px) {
   .product__text {
-    font-size: 18px;
+    font-size: 17px;
+    margin-bottom: 18px;
   }
 }
 @media screen and (max-width: 480px) {
   .product__text {
     font-size: 16px;
+    margin-bottom: 16px;
   }
 }
 @media screen and (max-width: 375px) {
