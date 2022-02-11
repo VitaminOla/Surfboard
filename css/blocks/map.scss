@@ -1,15 +1,4 @@
-.map-container {
+.map {
   width: 100%;
   height: 100%;
-  background: url("../img/content/map.png") center center no-repeat;
-  background-size: 100% 100%;
-  position: relative;
-
-  &:before {
-    content: url("../img/icons/marker.svg");
-    position: absolute;
-    top: 45%;
-    left: 55%;
-    transform: scale(85%);
-  }
 }
